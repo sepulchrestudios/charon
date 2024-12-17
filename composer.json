@@ -1,8 +1,8 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "sepulchrestudios/charon",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Charon is the authentication and authorization layer for everything in the Sepulchre Studios ecosystem.",
     "keywords": [
         "laravel",
         "framework"
