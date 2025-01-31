@@ -29,6 +29,10 @@ class JetstreamServiceProvider extends ServiceProvider
     {
         $this->configurePermissions();
 
+        Jetstream::useUserModel('SepulchreStudios\CharonShared\Models\User');
+        Jetstream::useTeamModel('SepulchreStudios\CharonShared\Models\Team');
+        Jetstream::useMembershipModel('SepulchreStudios\CharonShared\Models\Membership');
+
         Jetstream::createTeamsUsing(CreateTeam::class);
         Jetstream::updateTeamNamesUsing(UpdateTeamName::class);
         Jetstream::addTeamMembersUsing(AddTeamMember::class);
